@@ -16,8 +16,8 @@ how we feel about learn this
 
      </nav>
           <a href="assignment.html">home</a>
-          <a href="dog.html">Dog Picture</a>
-          <a href="Dog_video.html">Dog video</a>
+          <a href="fruit.html">fruit Picture</a>
+          <a href="fruit_video.html">fruit video</a>
       </nav>
 <main>
     <hl>my favourite fruit is bananas.</hl>
