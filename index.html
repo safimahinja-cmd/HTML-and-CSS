@@ -3,37 +3,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruits and Vegetables</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Fruits & Vegetables Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header class="text-center my-4">
-            <h1>Welcome to the Fruits and Vegetables Shop</h1>
-        </header>
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Fruits</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">Apples</li>
-                    <li class="list-group-item">Bananas</li>
-                    <li class="list-group-item">Cherries</li>
-                    <li class="list-group-item">Grapes</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <h2>Vegetables</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">Carrots</li>
-                    <li class="list-group-item">Broccoli</li>
-                    <li class="list-group-item">Lettuce</li>
-                    <li class="list-group-item">Peppers</li>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><strong>🥕 Fresh Produce Hub 🍎</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fruits">Fruits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#vegetables">Vegetables</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#benefits">Benefits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container text-center py-5">
+            <h1 class="display-4 fw-bold text-success mb-3">Welcome to Fresh Produce Hub</h1>
+            <p class="lead text-muted mb-4">Discover the amazing world of fruits and vegetables</p>
+            <a href="#fruits" class="btn btn-success btn-lg">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Fruits Section -->
+    <section id="fruits" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 text-success"><strong>🍎 Delicious Fruits 🍌</strong></h2>
+            <div class="row">
+                <!-- Apple Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm fruit-card">
+                        <div class="card-body">
+                            <h5 class="card-title">🍎 Apple</h5>
+                            <p class="card-text">Apples are rich in fiber and vitamin C. They promote heart health and aid digestion.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Color:</strong> Red, Green, Yellow</li>
+                                <li><strong>Season:</strong> Fall & Winter</li>
+                                <li><strong>Benefits:</strong> Heart Health, Digestion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banana Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm fruit-card">
+                        <div class="card-body">
+                            <h5 class="card-title">🍌 Banana</h5>
+                            <p class="card-text">Bananas are packed with potassium and provide instant energy. Perfect for a quick snack!</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Color:</strong> Yellow</li>
+                                <li><strong>Season:</strong> Year-round</li>
+                                <li><strong>Benefits:</strong> Energy, Potassium</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Orange Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm fruit-card">
+                        <div class="card-body">
+                            <h5 class="card-title">🍊 Orange</h5>
+                            <p class="card-text">Oranges are loaded with vitamin C and antioxidants. Boost your immunity with this citrus fruit!</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Color:</strong> Orange</li>
+                                <li><strong>Season:</strong> Winter</li>
+                                <li><strong>Benefits:</strong> Immunity, Vitamin C</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strawberry Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm fruit-card">
+                        <div class="card-body">
+                            <h5 class="card-title">🍓 Strawberry</h5>
+                            <p class="card-text">Strawberries are sweet, low in calories, and packed with antioxidants and vitamins.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Color:</strong> Red</li>
+                                <li><strong>Season:</strong> Spring & Summer</li>
+                                <li><strong>Benefits:</strong> Antioxidants, Low Calories</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mango Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm fruit-card">
+                        <div class="card-body">
+                            <h5 class="card-title">🥭 Mango</h5>
+                            <p class="card-text">The king of fruits! Mangoes are sweet, creamy, and full of vitamins A and C.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Color:</strong> Yellow, Orange</li>
+                                <li><strong>Season:</strong> Summer</li>
+                                <li><strong>Benefits:</strong> Vitamin A, Vitamin C</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grape Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm fruit-card">
+                        <div class="card-body">
+                            <h5 class="card-title">🍇 Grapes</h5>
+                            <p class="card-text">Small but mighty! Grapes are rich in antioxidants and improve heart health.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Color:</strong> Red, Green, Purple</li>
+                                <li><strong>Season:</strong> Summer & Fall</li>
+                                <li><strong>Benefits:</strong> Heart Health, Antioxidants</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vegetables Section -->
+    <section id="vegetables" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-success"><strong>🥦 Nutritious Vegetables 🥕</strong></h2>
+            <div class="row">
+                <!-- Carrot Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm veg-card">
+                        <div class="card-body">
+                            <h5 class="card-title">🥕 Carrot</h5>
+                            <p class="card-text">Carrots are rich in beta-carotene and great for eye health. Crunchy and delicious!</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Color:</strong> Orange</li>
+                                <li><strong>Season:</strong> Year-round</li>
+                                <li><strong>Benefits:</strong> Eye Health, Beta-carotene</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Broccoli Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm veg-card">
+                        <div class="card-body">
+                            <h5 class="card-title">🥦 Broccoli</h5>
+                            <p class="card-text">A powerhouse of nutrients! Broccoli is loaded with vitamins and minerals for strong bones.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Color:</strong> Green</li>
+                                <li><strong>Season:</strong> Fall & Winter</li>
+                                <li><strong>Benefits:</strong> Bone Health, Vitamins</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spinach Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm veg-card">
+                        <div class="card-body">
+                            <h5 class="card-title">🥬 Spinach</h5>
+                            <p class="card-text">Popeye's favorite! Spinach is full of iron and perfect for building strong muscles.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Color:</strong> Dark Green</li>
+                                <li><strong>Season:</strong> Spring & Fall</li>
+                                <li><strong>Benefits:</strong> Iron, Muscle Strength</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tomato Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm veg-card">
+                        <div class="card-body">
+                            <h5 class="card-title">🍅 Tomato</h5>
+                            <p class="card-text">Tomatoes are full of lycopene and add flavor to any dish. A kitchen essential!</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Color:</strong> Red</li>
+                                <li><strong>Season:</strong> Summer</li>
+                                <li><strong>Benefits:</strong> Lycopene, Heart Health</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bell Pepper Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm veg-card">
+                        <div class="card-body">
+                            <h5 class="card-title">🫑 Bell Pepper</h5>
+                            <p class="card-text">Colorful and sweet! Bell peppers are full of vitamin C and come in many vibrant colors.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Color:</strong> Red, Green, Yellow, Orange</li>
+                                <li><strong>Season:</strong> Summer & Fall</li>
+                                <li><strong>Benefits:</strong> Vitamin C, Antioxidants</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cucumber Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm veg-card">
+                        <div class="card-body">
+                            <h5 class="card-title">🥒 Cucumber</h5>
+                            <p class="card-text">Refreshing and hydrating! Cucumbers are perfect for salads and mostly water.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Color:</strong> Green</li>
+                                <li><strong>Season:</strong> Summer</li>
+                                <li><strong>Benefits:</strong> Hydration, Low Calories</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 text-success"><strong>💪 Health Benefits</strong></h2>
+            <div class="row">
+                <div class="col-md-3 text-center mb-4">
+                    <div class="benefit-box">
+                        <h4 class="text-success">🏥 Immune System</h4>
+                        <p>Fruits and vegetables are packed with vitamins that strengthen your immune system.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center mb-4">
+                    <div class="benefit-box">
+                        <h4 class="text-success">❤️ Heart Health</h4>
+                        <p>Rich in fiber and antioxidants to keep your heart healthy and strong.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center mb-4">
+                    <div class="benefit-box">
+                        <h4 class="text-success">👀 Eye Health</h4>
+                        <p>Carrots and leafy greens improve vision and protect your eyes.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center mb-4">
+                    <div class="benefit-box">
+                        <h4 class="text-success">⚡ Energy Boost</h4>
+                        <p>Natural sugars and nutrients provide sustained energy throughout the day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-success"><strong>📬 Get In Touch</strong></h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Share your thoughts..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-success text-white text-center py-4">
+        <p>&copy; 2026 Fresh Produce Hub. All rights reserved. | Made with 💚 by Safimahinja</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
